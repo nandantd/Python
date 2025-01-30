@@ -1,0 +1,110 @@
+Q. what is Inheritance and where you have used in selenium?
+In framework base class is the example for inheritance because all the classes will be extended by base class because of code reusability 
+Similarly, architecture of selenium WebDriver is also an example for inheritance
+
+Q. What is Encapsulation where you have used in selenium?
+In POM we have used encapsulation because we declare the elements here by using @FindBy annotation along with private keyword
+And we are accessing it outside the class with the help of getters and setter method
+
+Q. what is abstraction and where we have used in selenium ?
+WebDriver driver = new ChromeDriver() is an example for abstraction because we know all the methods of WebDriver how it functions but we don’t know how they have been implemented. Example : get(), close(), quite() etc.
+
+Q. what is polymorphism and where you have used it in selenium?
+WebDriver driver = new ChromeDriver(); is an example of runtime polymorphism during runtime we are deciding that webdriver methods should work for which driver (chrome/firefox/edge)
+
+
+Q. what is method overloading ?  and where you have used in selenium ?
+Frame() is an example for method overloading because it takes an argument of type int or string or WebElement
+Similarly, addArguments(), almost all the method of actions class like moveToElement(), contextClick() and doubleClick() is an example for method overloading.(Methods of assert class also)
+
+Q. what is method overriding and where you have used in selenium?
+In our framework all the methods of ITestListener are overdried in listener implementation class. Example : onTestSuccess(), onTestFailure(), onTestSkipped() etc.
+Similarly, all the methods of WebDriver, searchContext, javaScriptExecutor, takes screenshot and WebElement are override in remote web driver class. Example : close(), clear(), click(), findElement(), findElements()
+
+
+Difference between @findBy , @findAll &@findBys annotation
+ All annotation available in Selenium webdriver, its traditional ways to identify the elements in GUI.
+@findBy : used to identify the element using one locator or one condition
+@findAll : it contains multiple @findBy annotation , it mean we can identify  the same element using multiple locator (multiple conditions) , it will use OR condition during execution of locator
+     @findALL({ @findBy(@id=’username’) , @findBy(name=’user’)})
+     Private Webelements userNAmeEdt;
+   Note : using above concepts we can achieve Autohealing  technique 
+ AutoHealing : during execution , if one locator fails to identify the element , it will retry to identify the same element using another locator 
+@FindBys : it contains multiple @findBy annotation , it mean we can identify  the elements using multiple locator (multiple conditions) , it will use AND condition to during execution of locator
+        @findBys({ @findBy(@id=’username’) , @findBy(name=’user’)})
+     Private Webelements userNAmeEdt;
+
+
+9.	Rules of POM 
+Rule 1 : create separte java class for every page in a application & class name should be same page name
+Rule 2 : Identify all the elements using @findBy & @findAll , @findbys annotations & store them in speific pom / java class (Element declartion)
+Rule3 : For Every POM class  create Constructor to get an Object of the class & initialize the Page Elements ,  in order to initialize all the page Elements we should use Pagefactory.initElement() (Element initialization)
+Rule 4 : declare all the WebElements as private & provide getters methods to accesses elements in testScripts class [this processes is called Encapsulation]
+   Note : to create getters mtds inside the java class fallow below steps
+              =>place cursor inside the class Right clicksource generate getters & setters  select the getters check box  click on ok button
+Rule 5 : Go to every & identify the reusable business libraries & implement them in same POM class 
+
+
+
+Collection------
+
+
+List ---- insertion order--maintained
+Duplicates --allowed
+null values -- n no.of null values
+ArrayList(c)---->Dynamic Array
+-------->non-sync
+--->default capacity--10
+LinkedList(c)--->doubly Linked List
+-->no default capacity
+Vector(c)--->Dynamic Array--->Synchronized class
+-->10
+
+
+
+Set-----IO- is not maintained
+dupli - not allowed
+null values -- only one null value
+HashSet-->IO not maintained
+--->only one null value
+LinkedHashset---->IO is maintained
+-->only one null value
+TreeSet--->IO is not maintained but ascending order
+-->no null value[NullPointerException]
+
+
+
+Queue----IO is maintained
+  dupli--allowed
+ null values -- no null values allowed [NullPointerException]
+PriorityQueue(c)--->IO is not maintained 
+---->Duplicates are allowed 
+---->Null value not allowed
+
+Cursor-----Iterators
+3 types of cursors
+
+1.Enumeration(I)---->
+-->Legacy Classes(Vector,Stack)
+-->Forward direction
+-->hasMoreElements()-->boolean
+-->nextElement()--->Object
+-->elements()--->Object of Enumeration
+
+2.Iterator(I)--->Universal cursor
+--->Forward direction
+-->hasNext()-->boolean
+-->next()--->Object
+-->remove()
+-->iterator()-->object of Iterator
+
+3.ListIterator(I)--->List interface
+-->Forward and Backward
+---->hasNext(),next(),hasPrevious(),previous(),remove(),add(),set()
+---->listIterator()-->object of ListIterator
+
+
+
+
+
+

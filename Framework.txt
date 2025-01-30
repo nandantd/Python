@@ -1,0 +1,29 @@
+
+
+Hybrid framework
+
+Maven project
+
+Src/main/java----1.Generic packages--1.baseclass-->Driver initialize, to launch the browser
+                                     2.Webdriver methods->wait till element is visible, wait till element is invisible,etcc...
+                                     3.Extent reports-->Com.avenstack
+                                        Extent reports,extent sparkreporter
+                                     4.Listener methods-->ITlistener-interface
+                                              on testsuccess
+                                              on pass,fail,etcc...,
+                                      5.Retry analyzer--
+                                      
+                 2.Page objects---1.Registration--Mobile,emailid otp,signup--Repository creation---Method buildings
+      Application
+e commerce--Registration and login, Home page,PLP Page,PDP Page,Cartpage,Checkout page,Payment page
+---------------------------------------------------------------------------------------------------
+
+src/main/resources--Webdriver.exe files add
+------------------------------------------------
+
+src/test/java------1.test--Login test
+-----------------------------
+src/test/resources
+
+
+pom xml
