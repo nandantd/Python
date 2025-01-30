@@ -1,0 +1,199 @@
+Python notes:-
+--------------------
+
+Variables Declaration rules
+==========================================================================
+
+Before getting into variables, let us see what is a program.
+
+• Program is a set of instructions written in a programming language to
+ perform tasks.
+
+• A program has two important elements.
+
+1. Data : It is a information such as facts and numbers upon which 
+operations are performed.
+2. Instructions: A set of steps to perform operations upon data.
+
+• Every program needs data and instructions irrespective of the 
+programming language used.
+
+• Instructions without data is useless.
+Let us see what are Variables?.
+
+• Data in a program is handled by variables.
+
+• Variables are the names given to the data stored in a memory 
+location.
+
+• Variable is the identifier, reference to the data.
+Lets us understand a variable with an example.
+	 	 	 age = 15 				
+
+Variable	 	 	 Data
+ 
+Another example 
+ 
+	 	 name = ‘soap'
+	 	 price = 15
+	 	 weight= 10 
+Variable	 	 	 	 Data
+• Python variable declaration: 
+- Unlike other programming languages, in python variable is declared 
+and initialised at the same time.
+			 “=“ Assignment operator
+	 	 	 	 a = 10
+		 
+
+Declaration	 	 	 Initialisation
+
+- Declaring a variable is giving the name to the data.
+- Initialisation is storing the value in a variable.
+• In python declaring a variable without initialising or say with out the 
+data is not allowed.
+	 	 b= 12.5 ( declaration and initialisation)
+	 	 c (only declaration , is not allowed) 
+• Unlike other programming languages like c, c++, java, in python 
+declaration of data type for a variable is not required.
+• The value assigned to the variable determines the data type of the 
+ variable.
+• Declaration and initialisation of multiple variables: 
+- In python multiple variables can be declared and initialised in a 
+single statement.
+Example:
+a,b,c = 5,10,15
+Here:
+ a=5,b=10,c=15 , values will be stored in the respective 	 	 	
+ variables in the order they are declared.
+name, price,weight=‘soap’,10,15
+Here:
+name=‘soap’, price=10, weight=15
+Example : Assigning same value to multiple variables:
+		
+
+x, y, z=1,1,1 or	 	 x=y=z=
+
+
+Python- Dynamically Typed Language 
+======================================================================
+• When a variable is declared , it must be initialise as well
+• Variables do not have a specific data type , it’s type depends on the value assigned to 
+it.
+Ex :
+X = 25		 - integer type 
+X = 13.75 - float type 
+X = ‘A'	 - string type 
+• For the above example we can say that, Python is a dynamically typed language 
+meaning while defining a variable we don’t have to give its data type explicitly like in any 
+other languages such as c++ , Java 
+• To know what type of data is provided to the variable we use function type(x)
+Ex : 
+• The above result is <class ‘int ’> meaning the given data type belongs to a class of 
+integer 
+• As we know every thing in python is an object and every object will have its own class 
+• The class is decided on the type of value assigned to the variable
+
+Python keywords
+==============================================================================
+and	A logical operator
+as	To create an alias
+assert	For debugging
+break	To break out of a loop
+class	To define a class
+continue	To continue to the next iteration of a loop
+def	To define a function
+del	To delete an object
+elif	Used in conditional statements, same as else if
+else	Used in conditional statements
+except	Used with exceptions, what to do when an exception occurs
+False	Boolean value, result of comparison operations
+finally	Used with exceptions, a block of code that will be executed no matter if there is an exception or not
+for	To create a for loop
+from	To import specific parts of a module
+global	To declare a global variable
+if	To make a conditional statement
+import	To import a module
+in	To check if a value is present in a list, tuple, etc.
+is	To test if two variables are equal
+lambda	To create an anonymous function
+None	Represents a null value
+nonlocal	To declare a non-local variable
+not	A logical operator
+or	A logical operator
+pass	A null statement, a statement that will do nothing
+raise	To raise an exception
+return	To exit a function and return a value
+True	Boolean value, result of comparison operations
+try	To make a try...except statement
+while	To create a while loop
+with	Used to simplify exception handling
+yield	To return a list of values from a generator
+
+===================================================================================================
+Data types
+------------
+Numeric Data types
+----------
+In python there is no fixed memory for data type taken in python---*****
+
+1.int---there is no size limit for integer value---datatype is immutable
+example::
+           a=10--for this separate object is created to store the value
+
+           a=20--for this separate object is created to store the value
+
+           but variable a is pointing to updated one and previous will be moved to garbage collection
+2.float-------float is also immutable datatype
+
+3.bool(boolean)--True or False(used for Logical Operators)
+False=0
+True=1
+4.complex===a+ib
+a=real part
+b=imaginary part
+i==squareroot of -1
+
+Type Conversion
+-----------------
+1.Implicit
+2.Explicit
+
+int(),float(),bool(),str(),complex()
+
+Conditional Statements 16-10-24
+------------------------
+If:
+else:
+elif:
+Logical Operator(And Or Not)
+Identity OperatoS(is ,isnot)
+Bitwise operator(<<,>>,&,^,|)
+
+Loops statement
+---------------
+1.while:
+2.for loop:
+
+26-20-2024
+-===========
+
+Strings--immutable
+----------
+operators 
+1.concatenation
+2.Repetetion
+3.Slicing
+4.Indexing
+5.in
+6.not in
+
+
+
+
+
+
+
+
+
+
+
